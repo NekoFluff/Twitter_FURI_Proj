@@ -77,7 +77,7 @@ public class UserCategorizer {
 						
 				System.out.println(i+1 + "/" + friendCount + "\tUSER: " + u.getScreenName());
 				
-				ArrayList<UserList> lists = twitterHandler.getListsForUser(u.getScreenName(), new ArrayList<UserList>(), -1, 50);
+				ArrayList<UserList> lists = twitterHandler.getListsForUser(u.getScreenName(), new ArrayList<UserList>(), -1, 5);
 				
 				//Step 3: For each list with the user contained in them, parse the name and include it in the categories hashtable
 				for (UserList list : lists) {
@@ -141,11 +141,11 @@ public class UserCategorizer {
 			System.out.println("Sorted categories.");
 			
 			System.out.println("\nORIGINAL LIST");
-			for (int i = 0; i < Math.min(sortedCategories.size(), 20); i++) {
+			for (int i = 0; i < Math.min(sortedCategories.size(), 100); i++) {
 				Category x = sortedCategories.get(i);
 				System.out.println(x.name + ": " + x.val);
 			}
-			System.out.println("Printed top 20 categories.");
+			System.out.println("Printed top 100 categories.");
 			
 			
 			//Step 6: Print the top 20 categories

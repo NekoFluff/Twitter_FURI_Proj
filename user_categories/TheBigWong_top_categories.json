@@ -1,104 +1,104 @@
 {
   "topCategories":[
     {
-      "occurence":"2659",
-      "name":"tech"
-    },
-    {
-      "occurence":"1128",
-      "name":"lol"
-    },
-    {
-      "occurence":"956",
-      "name":"league"
-    },
-    {
-      "occurence":"615",
-      "name":"league of legends"
-    },
-    {
-      "occurence":"556",
-      "name":"sports"
-    },
-    {
-      "occurence":"512",
-      "name":"gaming"
-    },
-    {
-      "occurence":"510",
-      "name":"people"
-    },
-    {
-      "occurence":"504",
-      "name":"technology"
-    },
-    {
-      "occurence":"478",
-      "name":"news"
-    },
-    {
-      "occurence":"440",
+      "occurence":"14379",
       "name":"nba"
     },
     {
-      "occurence":"430",
-      "name":"games"
+      "occurence":"12081",
+      "name":"sports"
     },
     {
-      "occurence":"379",
-      "name":"music"
+      "occurence":"3590",
+      "name":"basketball"
     },
     {
-      "occurence":"294",
-      "name":"android"
+      "occurence":"3219",
+      "name":"tech"
     },
     {
-      "occurence":"268",
+      "occurence":"2182",
+      "name":"news"
+    },
+    {
+      "occurence":"2102",
+      "name":"nfl"
+    },
+    {
+      "occurence":"1507",
+      "name":"players"
+    },
+    {
+      "occurence":"1208",
+      "name":"athletes"
+    },
+    {
+      "occurence":"1189",
+      "name":"football"
+    },
+    {
+      "occurence":"825",
+      "name":"teams"
+    },
+    {
+      "occurence":"795",
       "name":"list"
     },
     {
-      "occurence":"245",
-      "name":"esports"
+      "occurence":"788",
+      "name":"people"
     },
     {
-      "occurence":"230",
-      "name":"people ive"
+      "occurence":"650",
+      "name":"nba news"
     },
     {
-      "occurence":"211",
-      "name":"youtubers"
+      "occurence":"646",
+      "name":"twitter"
     },
     {
-      "occurence":"205",
-      "name":"celebs"
+      "occurence":"625",
+      "name":"media"
     },
     {
-      "occurence":"202",
-      "name":"game"
+      "occurence":"570",
+      "name":"technology"
     },
     {
-      "occurence":"197",
-      "name":"youtube"
+      "occurence":"555",
+      "name":"nba teams"
     },
     {
-      "occurence":"193",
-      "name":"tech news"
+      "occurence":"555",
+      "name":"lol"
     },
     {
-      "occurence":"190",
-      "name":"people ive faved"
+      "occurence":"546",
+      "name":"nba players"
     },
     {
-      "occurence":"190",
-      "name":"ive faved"
+      "occurence":"515",
+      "name":"hoops"
     },
     {
-      "occurence":"181",
-      "name":"artists"
+      "occurence":"502",
+      "name":"suns"
     },
     {
-      "occurence":"165",
-      "name":"players"
+      "occurence":"470",
+      "name":"sport"
+    },
+    {
+      "occurence":"468",
+      "name":"league"
+    },
+    {
+      "occurence":"467",
+      "name":"basket"
+    },
+    {
+      "occurence":"408",
+      "name":"writers"
     }
   ]
 }

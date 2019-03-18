@@ -11,27 +11,36 @@ public class main {
 	}
 
 	public static void main(String[] args) {
+		boolean createSyntheticHistories = false;
+		boolean categorizeUser = true;
 
 		TwitterHandler twitterHandler = new TwitterHandler();
-		//HistorySynthesizer synthesizer = new HistorySynthesizer(twitterHandler);
-		//synthesizer.createSyntheticHistoryForRandomUsers();
 		
-		UserCategorizer categorizer = new UserCategorizer(twitterHandler);
-		List<Category> categories = categorizer.categorizeUser("TheBigWong");
-		
-		for (int i = 0; i < 4; i++) {
-			if (i >= categories.size()) { //Prevents from going out of bounds
-				break;
-			}
-			
-			System.out.println("CATEGORY " + categories.get(i).name);
-			List<String> urls = categorizer.getPossibleURLSForCategory(categories.get(i).name);
-			
-			for (String url : urls) {
-				System.out.println(url);
-			}
-			System.out.println();
+		if (createSyntheticHistories) {
+			HistorySynthesizer synthesizer = new HistorySynthesizer(twitterHandler);
+			synthesizer.createSyntheticHistoryForRandomUsers(); // 1000 users
 		}
+
+		
+		if (categorizeUser) {
+			UserCategorizer categorizer = new UserCategorizer(twitterHandler);
+			List<Category> categories = categorizer.categorizeUser("elonmusk");
+			
+			for (int i = 0; i < 4; i++) {
+				if (i >= categories.size()) { //Prevents from going out of bounds
+					break;
+				}
+				
+				System.out.println("CATEGORY " + categories.get(i).name);
+				List<String> urls = categorizer.getPossibleURLSForCategory(categories.get(i).name);
+				
+				for (String url : urls) {
+					System.out.println(url);
+				}
+				System.out.println();
+			}			
+		}
+
 		
 //			String users[] = {"FireflyAMV", "thesoulofwind1", "alexhammersmith", "Whataburger", "AlexMSmithAutho", "JoelHeyman", "VernonDavis85", "KirkCousins8", "FredoSauce", "Prudential", 
 //							"TheGiftedonFOX", "AishaMotan", "EDMShiro", "john_keim", "thecooleyzone", "Walterejones", "Areeba_Javed", "stephenpaddock", "WWERollins", "WWEDanielBryan"};
